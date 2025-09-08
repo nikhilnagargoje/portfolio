@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Projects</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg fixed-top shadow-sm bg-light">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="./index.html">Nikhil Nagargoje</a>
+    <div>
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="./education.html">Education</a></li>
+        <li class="nav-item"><a class="nav-link" href="./skills.html">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="./skills.html">Languages</a></li>
+        <li class="nav-item"><a class="nav-link" href="./projects.html">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="./projects.html">Cetificates</a></li>
+      </ul>
+    </div>
+  </div>
+</nav><nav class="navbar navbar-expand-lg fixed-top shadow-sm bg-light">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="./index.html">Nikhil Nagargoje</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+            data-bs-target="#navbarNav" aria-controls="navbarNav" 
+            aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="./education.html">Education</a></li>
+        <li class="nav-item"><a class="nav-link" href="./skills.html">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="./skills.html">Languages</a></li>
+        <li class="nav-item"><a class="nav-link" href="./projects.html">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="./projects.html">Certificates</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="container py-5">
+  <h2 class="section-title">Hobbies</h2>
+  <div class="row">
+    <div class="col-md-4 mb-3">
+      <div class="card shadow-sm hobby-card">
+        <img src="./assets/puzzle.jpeg" class="card-img-top" alt="Hobby 1">
+        <div class="card-body"><h5 class="card-title">Puzzle Solving</h5></div>
+      </div>
+    </div>
+
+    <div class="col-md-4 mb-3">
+      <div class="card shadow-sm hobby-card">
+        <img src="./assets/coading.jpeg" class="card-img-top" alt="Hobby 2">
+        <div class="card-body"><h5 class="card-title">Coading</h5></div>
+      </div>
+    </div>
+
+    <div class="col-md-4 mb-3">
+      <div class="card shadow-sm hobby-card">
+        <img src="./assets/gaming.jpeg" class="card-img-top" alt="Hobby 1">
+        <div class="card-body"><h5 class="card-title">Gaming</h5></div>
+      </div>
+    </div>
+
+    <div class="col-md-4 mb-3">
+      <div class="card shadow-sm hobby-card">
+        <img src="./assets/tech.jpeg" class="card-img-top" alt="Hobby 1">
+        <div class="card-body"><h5 class="card-title">Learning New Technologies</h5></div>
+      </div>
+    </div>
+
+    <div class="col-md-4 mb-3">
+      <div class="card shadow-sm hobby-card">
+        <img src="./assets/travelling.jpeg" class="card-img-top" alt="Hobby 1">
+        <div class="card-body"><h5 class="card-title">Travelling</h5></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="container py-5">
+  <h2 class="section-title mb-4 text-center">Certificates</h2>
+  <ul class="list-group certificates-list">
+    <li class="list-group-item">Frontend Web Development - Reliance</li>
+    <li class="list-group-item">Full Stack Web Development Bootcamp - Udemy</li>
+    <li class="list-group-item">Responsive Web Design - Free Code Camp</li>
+    <li class="list-group-item">Web Development Workshop - Microsoft</li>
+    <li class="list-group-item">HTML, CSS, JavaScript - Udemy</li>
+    <li class="list-group-item">Codeliber - HTML, CSS, JavaScript</li>
+    <li class="list-group-item">TCS ION Career Edge</li>
+    <li class="list-group-item">Smart Thinking Skills - Oxford (Academy Europe)</li>
+    <li class="list-group-item">Knowledgegate - HTML, CSS, JS</li>
+    <li class="list-group-item">Web Development - NSDC</li>
+  </ul>
+</section>
+
+<style>
+.certificates-list li {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeSlide 0.8s forwards;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  background: #f8f9fa;
+  color: #222;
+  font-weight: 500;
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+  padding: 12px 18px;
+  z-index: 0;
+}
+
+.certificates-list li:nth-child(1) { animation-delay: 0.2s; }
+.certificates-list li:nth-child(2) { animation-delay: 0.4s; }
+.certificates-list li:nth-child(3) { animation-delay: 0.6s; }
+.certificates-list li:nth-child(4) { animation-delay: 0.8s; }
+.certificates-list li:nth-child(5) { animation-delay: 1s; }
+.certificates-list li:nth-child(6) { animation-delay: 1.2s; }
+.certificates-list li:nth-child(7) { animation-delay: 1.4s; }
+.certificates-list li:nth-child(8) { animation-delay: 1.6s; }
+.certificates-list li:nth-child(9) { animation-delay: 1.8s; }
+.certificates-list li:nth-child(10) { animation-delay: 2s; }
+
+@keyframes fadeSlide {
+  from { opacity: 0; transform: translateY(40px) scale(0.95); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.certificates-list li::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(120deg, #ff6a00, #ee0979, #2193b0, #6dd5ed);
+  background-size: 300% 300%;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  z-index: -1;
+}
+
+.certificates-list li:hover::before {
+  opacity: 1;
+  animation: gradientMove 4s ease infinite;
+}
+
+.certificates-list li:hover {
+  color: #fff;
+  font-weight: bold;
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 150, 255, 0.6);
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+</style>
+
+
+<section class="container py-5">
+  <h2 class="section-title">Projects</h2>
+  <div class="row">
+    <div class="col-md-4 mb-3">
+      <div class="card shadow-sm project-card">
+        <img src="./assets/portfolio.jpg" class="card-img-top" alt="Project 1">
+        <div class="card-body"><h5 class="card-title">Portfolio Website</h5></div>
+      </div>
+    </div>
+
+    <div class="col-md-4 mb-3">
+      <div class="card shadow-sm project-card">
+        <img src="./assets/weather.jpeg" class="card-img-top" alt="Project 2">
+        <div class="card-body"><h5 class="card-title">Live Weather Website</h5></div>
+      </div>
+    </div>
+
+    <div class="col-md-4 mb-3">
+      <div class="card shadow-sm project-card">
+        <img src="./assets/bus.jpg" class="card-img-top" alt="Project 3">
+        <div class="card-body"><h5 class="card-title">Tours & Travels Website</h5></div>
+      </div>
+    </div>
+
+    <div class="col-md-4 mb-3">
+      <div class="card shadow-sm project-card">
+        <img src="./assets/todo.jpg" class="card-img-top" alt="Project 4">
+        <div class="card-body"><h5 class="card-title">To-Do List Website</h5></div>
+      </div>
+    </div>
+
+    <div class="col-md-4 mb-3">
+      <div class="card shadow-sm project-card">
+        <img src="./assets/driving.jpeg" class="card-img-top" alt="Project 5">
+        <div class="card-body"><h5 class="card-title">Driving School Website</h5></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
